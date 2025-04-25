@@ -4,6 +4,12 @@
   gap: 12px;
 }
 
+/* Add this rule to create consistent item sizing */
+.doctor-list > * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .no-results {
   background-color: #fff;
   border-radius: 4px;

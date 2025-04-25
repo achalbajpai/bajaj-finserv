@@ -12,12 +12,14 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  min-height: 180px;
 }
 
 .doctor-profile {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  flex: 0 0 auto;
 }
 
 .doctor-image {
@@ -74,6 +76,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex: 0 0 auto;
 }
 
 .doctor-location {
@@ -118,6 +121,7 @@
 .appointment-button {
   display: flex;
   justify-content: flex-end;
+  flex: 0 0 auto;
 }
 
 .appointment-button button {
@@ -166,6 +170,7 @@
   .doctor-card {
     padding: 12px;
     max-width: 100%;
+    min-height: 180px;
   }
   
   .doctor-profile {
