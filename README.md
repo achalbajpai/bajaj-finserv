@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/50e07fd6-1079-44ae-a6af-2df3fef0754e
 # Bajaj Finserv Frontend Task
 
 ## Overview
