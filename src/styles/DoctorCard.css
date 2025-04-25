@@ -1,0 +1,190 @@
+.doctor-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.doctor-profile {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.doctor-image {
+  flex-shrink: 0;
+}
+
+.doctor-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  border: 1px solid #eee;
+}
+
+.doctor-basic-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0; /* Helps with text overflow */
+}
+
+.doctor-basic-info h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doctor-specialties {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+.doctor-education {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+.doctor-experience {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+.doctor-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.doctor-location {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0; /* Helps with text overflow */
+}
+
+.clinic-name, .location-name, .doctor-languages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.doctor-fee {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+  margin-left: 20px;
+  flex-shrink: 0;
+  min-width: 80px;
+}
+
+.appointment-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.appointment-button button {
+  background-color: #fff;
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  max-width: 160px;
+  transition: all 0.2s ease;
+}
+
+.appointment-button button:hover {
+  background-color: #1976d2;
+  color: white;
+}
+
+.consultation-options {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.consult-badge {
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.consult-badge.video {
+  background-color: #e6f7ff;
+  color: #0066cc;
+}
+
+.consult-badge.clinic {
+  background-color: #e6ffed;
+  color: #008855;
+}
+
+@media (max-width: 768px) {
+  .doctor-card {
+    padding: 12px;
+    max-width: 100%;
+  }
+  
+  .doctor-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .doctor-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .appointment-button {
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .appointment-button button {
+    max-width: 100%;
+  }
+} 
