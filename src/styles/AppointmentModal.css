@@ -1,0 +1,194 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.appointment-modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.doctor-profile-section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.doctor-profile-image {
+  flex-shrink: 0;
+}
+
+.doctor-profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.doctor-profile-details {
+  flex: 1;
+}
+
+.doctor-profile-details h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.doctor-specialty {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.doctor-introduction {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.clinic-details {
+  margin-bottom: 8px;
+}
+
+.clinic-name {
+  margin: 0 0 2px 0;
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.clinic-address {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.appointment-fee {
+  margin: 8px 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.appointment-form {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.cancel-button {
+  padding: 8px 16px;
+  background-color: #f3f3f3;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirm-button {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirm-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .doctor-profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .doctor-profile-image {
+    margin-bottom: 12px;
+  }
+  
+  .appointment-modal {
+    width: 95%;
+  }
+} 
